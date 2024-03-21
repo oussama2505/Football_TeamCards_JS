@@ -7,29 +7,29 @@ To ensure that you can't modify an object by adding or removing any properties. 
 ## object destructuring
 The object destructuring syntax allows you to unpack values from arrays and objects:
 
-`
+```
 const developerObj = {
   name: "Jessica Wilkins",
   isDeveloper: true
 };
-
-// Object destructuring
 const { name, isDeveloper } = developerObj;
-`
+```
+
+
 
 ## function Filter()
 - Now you will start building out the function that will show player cards based on the selections made by the user in the Filter Teammates dropdown menu.
 
 - Function parameters can be initialized with default values. If a function is called without an argument, then the default value will be used:
 
-`
+```
 const greeting = (name = "Anonymous") => {
   return "Hello " + name;
 } 
 
 console.log(greeting("John")); // Hello John
 console.log(greeting()); // Hello Anonymous
-`
+```
 
 - arr contains a series of objects that each contains a name, position, number, isCaptain and nickname property. In order to access each of those properties inside the callback function, you will need to use object destructuring to unpack them into variables.
 
